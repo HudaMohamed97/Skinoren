@@ -1,0 +1,548 @@
+html,
+body {
+	background-color: dimgray;
+}
+
+img:not(.picIndex) {
+	position: absolute;
+}
+
+.main-container {
+	background-size: 100% 100%;
+	width: 1280px;
+	height: 800px;
+	position: relative;
+	overflow: hidden;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.header {
+	z-index: 999999;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.header img {
+	width: 50px;
+	right: 0px;
+	bottom: 20px;
+	position: absolute;
+}
+
+.swiper-slide {
+	background-color: #fff;
+	background-size: 100% 100%;
+	background-position: 100%;
+	/*    display: flex;*/
+	background-repeat: no-repeat;
+	align-items: center;
+	background-position: center top;
+	justify-content: center;
+	/*    flex-direction: column;*/
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-bottom: 0px;
+	padding-left: 0em;
+	bottom: 0px;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #fff;
+}
+
+.swiper-button-container {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+body {
+	/*  display: flex;*/
+	height: 100vh;
+	width: 100%;
+	font-family: 'San Francisco Display Semibold';
+}
+
+.swiper-slide h2 {
+	pointer-events: none;
+	opacity: 0;
+	color: #ffffff;
+	font-size: 5rem;
+	letter-spacing: -1px;
+	-webkit-transform: translateY(-5%) scale(0.8);
+	transform: translateY(-5%) scale(0.8);
+	transition: 1s ease;
+	text-transform: uppercase;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.01);
+}
+
+.swiper-slide-active h2 {
+	opacity: 1;
+	-webkit-transform: translateY(0%) scale(1);
+	transform: translateY(0%) scale(1);
+	transition: 1s ease;
+}
+
+@font-face {
+	font-family: 'GiloryLight';
+	src: url(../fonts/GilroyLight.otf);
+}
+
+@font-face {
+	font-family: 'GilroyBold';
+	src: url(../fonts/GilroyExtraBold.otf);
+}
+
+/* Navbar */
+ul.navbar {
+	z-index: 9999;
+	position: absolute;
+	bottom: 0;
+	left: 120px;
+	height: 60px;
+	width: 960px;
+	background: #ffebcd4d;
+	font-family: 'GiloryLight';
+	font-size: 15px;
+}
+
+ul.navbar li {
+	list-style-type: none;
+	color: #722003;
+	cursor: pointer;
+}
+
+ul.navbar .showrefs {
+	width: 130px;
+}
+
+#home {
+	cursor: pointer;
+	color: #722003;
+}
+
+ul.navbar i.fa-home {
+	font-size: 2.5em;
+}
+
+.next,
+.prev {
+	width: 40px;
+	height: 40px;
+	color: #722003;
+	line-height: 40px;
+	font-size: 36px;
+	border: 1px solid #722003;
+}
+
+.next .fa,
+.prev .fa {
+	color: #FF5722;
+	text-align: center;
+}
+
+.next .fa {
+	width: 40px;
+}
+
+.prev .fa {
+	width: 30px;
+}
+
+#showIndex {
+	padding: 5px 11px;
+}
+
+/* End Navbar */
+
+/* index container */
+.indexContainer {
+	display: block;
+	bottom: -200px;
+	height: 180px;
+	position: absolute;
+	z-index: 9999;
+	margin: 0;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.85);
+	border-top: 5px solid #27aea9;
+	border-bottom: 5px solid #27aea9;
+	width: 100%;
+}
+
+.indexContainer .slidesLens {
+	position: fixed;
+	bottom: -130%;
+	left: 0;
+	height: 800px;
+	width: 1280px;
+	background-color: rgba(0, 0, 0, 0.15);
+	z-index: -1;
+}
+
+.indexContainer .close {
+	color: #27aea9;
+	top: -30px;
+	font-size: 2em;
+	padding-left: 20px;
+}
+
+.indexContainer .close:hover {
+	color: #fff;
+}
+
+.fa-close:hover {
+	color: #f6a41a;
+}
+
+.indexContainer ul {
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.indexContainer ul li {
+	display: table-cell;
+	padding-right: 20px;
+}
+
+.indexContainer ul li img {
+	width: 200px;
+	border: 1px solid #fff;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+}
+
+.indexContainer ul li img:hover {
+	transform: scale(0.8);
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+}
+
+@font-face {
+	font-family: 'vag';
+	src: url('../fonts/vagrounded.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Start Global ******************************************************************/
+.Skinoren_logo {
+	position: absolute;
+	top: 710px;
+	right: 35px;
+	z-index: 999;
+	width: 150px;
+}
+
+.S_Ref_btn {
+	position: absolute;
+	bottom: 140px;
+	right: 50px;
+	width: 54px;
+	height: 55px;
+}
+
+.S_SD_btn {
+	position: absolute;
+	bottom: 200px;
+	right: 50px;
+	width: 54px;
+	height: 55px;
+}
+
+.ref_lens {
+	position: absolute;
+	width: 1280px;
+	height: 800px;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.85);
+	display: none
+}
+
+.bg_all {
+	background: #fff url(../images/back_inside_01.png) no-repeat top/100%;
+}
+
+/* End Global ******************************************************************/
+
+/* Start main ******************************************************************/
+
+.Slide1_BG {
+	background: url(../images/S01_bg.jpg) no-repeat top/100%;
+}
+
+/* End Slide 01 ******************************************************************/
+
+/* Start Slide 02 ******************************************************************/
+.Slide2_BG {
+	background: url(../images/S02_bg.jpg) no-repeat top/100%;
+	background-size: contain;
+}
+
+/* Start Slide 03 ******************************************************************/
+.Slide3_BG {
+	background: url(../images/S03_bg.jpg) no-repeat top/100%;
+	background-size: contain;
+}
+
+.S03_01 {
+	top: 328px;
+	left: 91px;
+	width: 85px;
+}
+
+.S03_02 {
+	top: 325px;
+	left: 259px;
+	width: 88px;
+}
+
+.S03_03 {
+	top: 470px;
+	left: 80px;
+	width: 119px;
+}
+
+.S03_04 {
+	top: 470px;
+	left: 240px;
+	width: 149px;
+}
+
+.S03_05 {
+	left: 0;
+	top: 0;
+	width: 1280px;
+	height: 800px;
+	display: none
+}
+
+/* Start Slide 04 ******************************************************************/
+.Slide4_BG {
+	background: url(../images/S04_bg.jpg) no-repeat top/100%;
+	background-size: contain;
+}
+
+.S04_01 {
+	top: 140px;
+	left: 500px;
+	width: 126px;
+}
+
+.S04_02 {
+	top: 400px;
+	left: 680px;
+	width: 126px;
+}
+
+.S04_03 {
+	top: 510px;
+	left: 450px;
+	width: 126px;
+}
+
+.S04_04 {
+	top: 0;
+	left: 0;
+	width: 1280px;
+	height: 800px;
+	display: none
+}
+
+
+/* Start Slide 05 ******************************************************************/
+.Slide5_BG {
+	background: url(../images/S05_bg.jpg) no-repeat top/100%;
+	background-size: contain;
+}
+
+.S05_01 {
+	top: 150px;
+	left: 75px;
+	width: 285px;
+}
+
+.S05_02 {
+	top: 150px;
+	left: 400px;
+	width: 304px;
+}
+
+.S05_03 {
+	top: 150px;
+	left: 730px;
+	width: 306px;
+}
+
+.S05_04 {
+	top: 195px;
+	left: 144px;
+	width: 171px;
+}
+
+.S05_05 {
+	top: 268px;
+	left: 465px;
+	width: 212px;
+}
+
+.S05_06 {
+	top: 224px;
+	left: 810px;
+	width: 151px;
+}
+
+.S05_07 {
+	top: 222px;
+	left: 816px;
+	width: 184px;
+}
+
+.S05_08,
+.S05_09 {
+	top: 0;
+	left: 0;
+	width: 1280px;
+	height: 800px;
+	display: none;
+	opacity: 0;
+}
+
+/* Start Slide 06 ******************************************************************/
+.Slide6_BG {
+	background: url(../images/S06_bg.jpg) no-repeat top/100%;
+	background-size: contain;
+}
+
+.S06_01 {
+	top: 257px;
+	left: 370px;
+	width: 313px;
+}
+
+.S06_02 {
+	top: 257px;
+	left: 423px;
+	width: 317px;
+}
+
+.S06_03,
+.S06_04 {
+	top: 0;
+	left: 0;
+	width: 1280px;
+	height: 800px;
+	display: none
+}
+
+
+/* Start Slide 07 ******************************************************************/
+.Slide7_BG {
+	background: url(../images/S07_bg.jpg) no-repeat top/100%;
+	background-size: contain;
+}
+
+.S07_01 {
+	top: 470px;
+	left: 60px;
+	width: 908px;
+}
+
+.S07_02 {
+	top: 0;
+	left: 0;
+	width: 1280px;
+	height: 800px;
+	display: none
+}
+
+
+
+/* Start Slide 08 ******************************************************************/
+.Slide8_BG {
+	background: url(../images/S08_bg.jpg) no-repeat top/100%;
+	background-size: contain;
+}
+
+.S08_01 {
+	top: 150px;
+	left: 355px;
+	width: 533px;
+}
+
+.S08_02 {
+	top: 235px;
+	left: 460px;
+	width: 432px;
+}
+
+.S08_03 {
+	top: 402px;
+	left: 464px;
+	width: 330px;
+}
+
+.S08_04 {
+	top: 490px;
+	left: 352px;
+	width: 533px;
+}
+
+.S08_05 {
+	top: 0;
+	left: 0;
+	width: 1280px;
+	height: 800px;
+	display: none
+}
+
+
+/* Start Slide 09 ******************************************************************/
+.Slide9_BG {
+	background: url(../images/S09_bg.jpg) no-repeat top/100%;
+	background-size: contain;
+}
+
+.S09_01_scroller::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 15px;
+}
+
+.S09_01_scroller::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background-color: #00bcd4d9;
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.S09_01_scroller {
+	top: 100px;
+	left: 100px;
+	width: 900px;
+	height: 600px;
+	overflow: scroll;
+	position: absolute
+}
+
+.S09_01 {
+	top: 50px;
+	left: 75px;
+	width: 848px;
+}
